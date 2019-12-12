@@ -9,17 +9,14 @@
 
 具体操作如下：
 ```
-PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
 $ ./ascii_signature.sh
 usage:
     ./ascii_signature.sh --font|-f $font --str|-s $string   do work
                          --list|-l                            list all supported font
 
-PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
 $ ./ascii_signature.sh -l
 smkeyboard(default) blocks bubble doom smpoison template timesofl univers
 
-PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
 $ ./ascii_signature.sh -s Diag -f univers
 88888888ba,   88 
 88      `"8b  "" 
@@ -32,23 +29,19 @@ $ ./ascii_signature.sh -s Diag -f univers
                              aa,    ,88 
                               "Y8bbdP"  
 
-PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
 $
 ```
 #### `font` 文件夹
 用于存放字符画风格的目录。其中，'template' 为模板文件，在新增字符画风格时，只需将'template' `copy` 成新的名字，然后将文件中大小写英文字母和数字填入对应位置即可
 目前已经支持的字符画样式如下：
 ```
-PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
 $ ls font/
 blocks  bubble  doom  smpoison  template  timesofl  univers
-PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
 $ ./ascii_signature.sh -s Diag 
  ____  ____  ____  ____ 
 ||D ||||i ||||a ||||g ||
 ||__||||__||||__||||__||
 |/__\||/__\||/__\||/__\|
-PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
 $ ./ascii_signature.sh -s Diag -f blocks
  .----------------.  .----------------.  .----------------.  .----------------.
 | .--------------. || .--------------. || .--------------. || .--------------. |
@@ -62,14 +55,12 @@ $ ./ascii_signature.sh -s Diag -f blocks
 | '--------------' || '--------------' || '--------------' || '--------------' |
  '----------------'  '----------------'  '----------------'  '----------------' 
 
-PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
 $ ./ascii_signature.sh -s Diag -f bubble
   _    _    _    _  
  / \  / \  / \  / \ 
 ( D )( i )( a )( g )
  \_/  \_/  \_/  \_/ 
 
-PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
 $ ./ascii_signature.sh -s Diag -f doom
 ______   _                  
 |  _  \ (_)                 
@@ -80,7 +71,6 @@ ______   _
                       __/ | 
                      |___/  
 
-PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
 $ ./ascii_signature.sh -s Diag -f smpoison
 @@@@@@@  @@@  @@@@@@   @@@@@@@  
 @@!  @@@ @@! @@!  @@@ !@@       
@@ -88,7 +78,6 @@ $ ./ascii_signature.sh -s Diag -f smpoison
 !!:  !!! !!: !!:  !!! :!!   !!: 
 :: :  :  :    :   : :  :: :: :  
 
-PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
 $ ./ascii_signature.sh -s Diag -f timesofl
      ### ######## ######## ######## 
 #  #  ## ###  ### ######## ######## 
@@ -99,7 +88,6 @@ $ ./ascii_signature.sh -s Diag -f timesofl
      ### ###   ## ##  #  # ####  ## 
 ######## ######## ######## #    ### 
 
-PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
 $ ./ascii_signature.sh -s Diag -f univers
 88888888ba,   88 
 88      `"8b  "" 
