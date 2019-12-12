@@ -1,0 +1,822 @@
+#!/bin/bash
+
+### Upper
+
+eval 'export char_A=`cat`' <<"blocks"
+       db        
+      d88b       
+     d8'`8b      
+    d8'  `8b     
+   d8YaaaaY8b    
+  d8""""""""8b   
+ d8'        `8b  
+d8'          `8b 
+                 
+                 
+blocks
+
+eval 'export char_B=`cat`' <<"blocks"
+88888888ba  
+88      "8b 
+88      ,8P 
+88aaaaaa8P' 
+88""""""8b, 
+88      `8b 
+88      a8P 
+88888888P"  
+            
+            
+blocks
+
+eval 'export char_C=`cat`' <<"blocks"
+  ,ad8888ba,  
+ d8"'    `"8b 
+d8'           
+88            
+88            
+Y8,           
+ Y8a.    .a8P 
+  `"Y8888Y"'  
+              
+              
+blocks
+
+eval 'export char_D=`cat`' <<"blocks"
+88888888ba,   
+88      `"8b  
+88        `8b 
+88         88 
+88         88 
+88         8P 
+88      .a8P  
+88888888Y"'   
+              
+              
+blocks
+
+eval 'export char_E=`cat`' <<"blocks"
+88888888888 
+88          
+88          
+88aaaaa     
+88"""""     
+88          
+88          
+88888888888 
+            
+            
+blocks
+
+eval 'export char_F=`cat`' <<"blocks"
+88888888888 
+88          
+88          
+88aaaaa     
+88"""""     
+88          
+88          
+88          
+            
+            
+blocks
+
+eval 'export char_G=`cat`' <<"blocks"
+  ,ad8888ba,  
+ d8"'    `"8b 
+d8'           
+88            
+88      88888 
+Y8,        88 
+ Y8a.    .a88 
+  `"Y88888P"  
+              
+              
+blocks
+
+eval 'export char_H=`cat`' <<"blocks"
+88        88 
+88        88 
+88        88 
+88aaaaaaaa88 
+88""""""""88 
+88        88 
+88        88 
+88        88 
+             
+             
+blocks
+
+eval 'export char_I=`cat`' <<"blocks"
+88 
+88 
+88 
+88 
+88 
+88 
+88 
+88 
+   
+   
+blocks
+
+eval 'export char_J=`cat`' <<"blocks"
+        88 
+        88 
+        88 
+        88 
+        88 
+        88 
+88,   ,d88 
+ "Y8888P"  
+           
+           
+blocks
+
+eval 'export char_K=`cat`' <<"blocks"
+88      a8P  
+88    ,88'   
+88  ,88"     
+88,d88'      
+8888"88,     
+88P   Y8b    
+88     "88,  
+88       Y8b 
+             
+             
+blocks
+
+eval 'export char_L=`cat`' <<"blocks"
+88          
+88          
+88          
+88          
+88          
+88          
+88          
+88888888888 
+            
+            
+blocks
+
+eval 'export char_M=`cat`' <<"blocks"
+88b           d88 
+888b         d888 
+88`8b       d8'88 
+88 `8b     d8' 88 
+88  `8b   d8'  88 
+88   `8b d8'   88 
+88    `888'    88 
+88     `8'     88 
+                  
+                  
+blocks
+
+eval 'export char_N=`cat`' <<"blocks"
+888b      88 
+8888b     88 
+88 `8b    88 
+88  `8b   88 
+88   `8b  88 
+88    `8b 88 
+88     `8888 
+88      `888 
+             
+             
+blocks
+
+eval 'export char_O=`cat`' <<"blocks"
+  ,ad8888ba,   
+ d8"'    `"8b  
+d8'        `8b 
+88          88 
+88          88 
+Y8,        ,8P 
+ Y8a.    .a8P  
+  `"Y8888Y"'   
+               
+               
+blocks
+
+eval 'export char_P=`cat`' <<"blocks"
+88888888ba  
+88      "8b 
+88      ,8P 
+88aaaaaa8P' 
+88""""""'   
+88          
+88          
+88          
+            
+            
+blocks
+
+eval 'export char_Q=`cat`' <<"blocks"
+  ,ad8888ba,   
+ d8"'    `"8b  
+d8'        `8b 
+88          88 
+88          88 
+Y8,    "88,,8P 
+ Y8a.    Y88P  
+  `"Y8888Y"Y8a 
+               
+               
+blocks
+
+eval 'export char_R=`cat`' <<"blocks"
+88888888ba  
+88      "8b 
+88      ,8P 
+88aaaaaa8P' 
+88""""88'   
+88    `8b   
+88     `8b  
+88      `8b 
+            
+            
+blocks
+
+eval 'export char_S=`cat`' <<"blocks"
+ ad88888ba  
+d8"     "8b 
+Y8,         
+`Y8aaaaa,   
+  `"""""8b, 
+        `8b 
+Y8a     a8P 
+ "Y88888P"  
+            
+            
+blocks
+
+eval 'export char_T=`cat`' <<"blocks"
+888888888888  
+     88      
+     88      
+     88      
+     88      
+     88      
+     88      
+     88      
+             
+             
+blocks
+
+eval 'export char_U=`cat`' <<"blocks"
+88        88 
+88        88 
+88        88 
+88        88 
+88        88 
+88        88 
+Y8a.    .a8P 
+ `"Y8888Y"'  
+             
+             
+blocks
+
+eval 'export char_V=`cat`' <<"blocks"
+8b           d8 
+`8b         d8' 
+ `8b       d8'  
+  `8b     d8'   
+   `8b   d8'    
+    `8b d8'     
+     `888'      
+      `8'       
+                
+                
+blocks
+
+eval 'export char_W=`cat`' <<"blocks"
+I8,        8        ,8I 
+`8b       d8b       d8' 
+ "8,     ,8"8,     ,8"  
+  Y8     8P Y8     8P   
+  `8b   d8' `8b   d8'   
+   `8a a8'   `8a a8'    
+    `8a8'     `8a8'     
+     `8'       `8'      
+                        
+                        
+blocks
+
+eval 'export char_X=`cat`' <<"blocks"
+8b        d8 
+ Y8,    ,8P  
+  `8b  d8'   
+    Y88P     
+    d88b     
+  ,8P  Y8,   
+ d8'    `8b  
+8P        Y8 
+             
+             
+blocks
+
+eval 'export char_Y=`cat`' <<"blocks"
+8b        d8 
+ Y8,    ,8P  
+  Y8,  ,8P   
+   "8aa8"    
+    `88'     
+     88      
+     88      
+     88      
+             
+             
+blocks
+
+eval 'export char_Z=`cat`' <<"blocks"
+888888888888 
+         ,88 
+       ,88"  
+     ,88"    
+   ,88"      
+ ,88"        
+88"          
+888888888888 
+             
+             
+blocks
+
+### lower
+
+eval 'export char_a=`cat`' <<"blocks"
+           
+           
+           
+,adPPYYba, 
+""     `Y8 
+,adPPPPP88 
+88,    ,88 
+`"8bbdP"Y8 
+           
+           
+blocks
+
+eval 'export char_b=`cat`' <<"blocks"
+88          
+88          
+88          
+88,dPPYba,  
+88P'    "8a 
+88       d8 
+88b,   ,a8" 
+8Y"Ybbd8"'  
+            
+            
+blocks
+
+eval 'export char_c=`cat`' <<"blocks"
+           
+           
+           
+ ,adPPYba, 
+a8"     "" 
+8b         
+"8a,   ,aa 
+ `"Ybbd8"' 
+           
+           
+blocks
+
+eval 'export char_d=`cat`' <<"blocks"
+         88 
+         88 
+         88 
+ ,adPPYb,88 
+a8"    `Y88 
+8b       88 
+"8a,   ,d88 
+ `"8bbdP"Y8 
+            
+            
+blocks
+
+eval 'export char_e=`cat`' <<"blocks"
+           
+           
+           
+ ,adPPYba, 
+a8P_____88 
+8PP""""""" 
+"8b,   ,aa 
+ `"Ybbd8"' 
+           
+           
+blocks
+
+eval 'export char_f=`cat`' <<"blocks"
+   ad88 
+  d8"   
+  88    
+MM88MMM 
+  88    
+  88    
+  88    
+  88    
+        
+        
+blocks
+
+eval 'export char_g=`cat`' <<"blocks"
+            
+            
+            
+ ,adPPYb,d8 
+a8"    `Y88 
+8b       88 
+"8a,   ,d88 
+ `"YbbdP"Y8 
+ aa,    ,88 
+  "Y8bbdP"  
+blocks
+
+eval 'export char_h=`cat`' <<"blocks"
+88          
+88          
+88          
+88,dPPYba,  
+88P'    "8a 
+88       88 
+88       88 
+88       88 
+            
+            
+blocks
+
+eval 'export char_i=`cat`' <<"blocks"
+88 
+"" 
+   
+88 
+88 
+88 
+88 
+88 
+   
+   
+blocks
+
+eval 'export char_j=`cat`' <<"blocks"
+   88 
+   "" 
+      
+   88 
+   88 
+   88 
+   88 
+   88 
+  ,88 
+888P" 
+blocks
+
+eval 'export char_k=`cat`' <<"blocks"
+88        
+88        
+88        
+88   ,d8  
+88 ,a8"   
+8888[     
+88`"Yba,  
+88   `Y8a 
+          
+          
+blocks
+
+eval 'export char_l=`cat`' <<"blocks"
+88 
+88 
+88 
+88 
+88 
+88 
+88 
+88 
+   
+   
+blocks
+
+eval 'export char_m=`cat`' <<"blocks"
+                   
+                   
+                   
+88,dPYba,,adPYba,  
+88P'   "88"    "8a 
+88      88      88 
+88      88      88 
+88      88      88 
+                   
+                   
+blocks
+
+eval 'export char_n=`cat`' <<"blocks"
+            
+            
+            
+8b,dPPYba,  
+88P'   `"8a 
+88       88 
+88       88 
+88       88 
+            
+            
+blocks
+
+eval 'export char_o=`cat`' <<"blocks"
+            
+            
+            
+ ,adPPYba,  
+a8"     "8a 
+8b       d8 
+"8a,   ,a8" 
+ `"YbbdP"'  
+            
+            
+blocks
+
+eval 'export char_p=`cat`' <<"blocks"
+            
+            
+            
+8b,dPPYba,  
+88P'    "8a 
+88       d8 
+88b,   ,a8" 
+88`YbbdP"'  
+88          
+88          
+blocks
+
+eval 'export char_q=`cat`' <<"blocks"
+            
+            
+            
+ ,adPPYb,d8 
+a8"    `Y88 
+8b       88 
+"8a    ,d88 
+ `"YbbdP'88 
+         88 
+         88 
+blocks
+
+eval 'export char_r=`cat`' <<"blocks"
+           
+           
+           
+8b,dPPYba, 
+88P'   "Y8 
+88         
+88         
+88         
+           
+           
+blocks
+
+eval 'export char_s=`cat`' <<"blocks"
+          
+          
+          
+,adPPYba, 
+I8[    "" 
+ `"Y8ba,  
+aa    ]8I 
+`"YbbdP"' 
+          
+          
+blocks
+
+eval 'export char_t=`cat`' <<"blocks"
+        
+  ,d    
+  88    
+MM88MMM 
+  88    
+  88    
+  88,   
+  "Y888 
+        
+        
+blocks
+
+eval 'export char_u=`cat`' <<"blocks"
+            
+            
+            
+88       88 
+88       88 
+88       88 
+"8a,   ,a88 
+ `"YbbdP'Y8 
+            
+            
+blocks
+
+eval 'export char_v=`cat`' <<"blocks"
+            
+            
+            
+8b       d8 
+`8b     d8' 
+ `8b   d8'  
+  `8b,d8'   
+    "8"     
+            
+            
+blocks
+
+eval 'export char_w=`cat`' <<"blocks"
+                   
+                   
+                   
+8b      db      d8 
+`8b    d88b    d8' 
+ `8b  d8'`8b  d8'  
+  `8bd8'  `8bd8'   
+    YP      YP     
+                   
+                   
+blocks
+
+eval 'export char_x=`cat`' <<"blocks"
+            
+            
+            
+8b,     ,d8 
+ `Y8, ,8P'  
+   )888(    
+ ,d8" "8b,  
+8P'     `Y8 
+            
+            
+blocks
+
+eval 'export char_y=`cat`' <<"blocks"
+            
+            
+            
+8b       d8 
+`8b     d8' 
+ `8b   d8'  
+  `8b,d8'   
+    Y88'    
+    d8'     
+   d8'      
+blocks
+
+eval 'export char_z=`cat`' <<"blocks"
+          
+          
+          
+888888888 
+     a8P" 
+  ,d8P'   
+,d8"      
+888888888 
+          
+          
+blocks
+
+# if we don't have lower case ...
+export char_a="${char_a:-$char_A}"
+export char_b="${char_b:-$char_B}"
+export char_c="${char_c:-$char_C}"
+export char_d="${char_d:-$char_D}"
+export char_e="${char_e:-$char_E}"
+export char_f="${char_f:-$char_F}"
+export char_g="${char_g:-$char_G}"
+export char_h="${char_h:-$char_H}"
+export char_i="${char_i:-$char_I}"
+export char_j="${char_j:-$char_J}"
+export char_k="${char_k:-$char_K}"
+export char_l="${char_l:-$char_L}"
+export char_m="${char_m:-$char_M}"
+export char_n="${char_n:-$char_N}"
+export char_o="${char_o:-$char_O}"
+export char_p="${char_p:-$char_P}"
+export char_q="${char_q:-$char_Q}"
+export char_r="${char_r:-$char_R}"
+export char_s="${char_s:-$char_S}"
+export char_t="${char_t:-$char_T}"
+export char_u="${char_u:-$char_U}"
+export char_v="${char_v:-$char_V}"
+export char_w="${char_w:-$char_W}"
+export char_x="${char_x:-$char_X}"
+export char_y="${char_y:-$char_Y}"
+export char_z="${char_z:-$char_Z}"
+
+### number
+
+eval 'export char_0=`cat`' <<"blocks"
+   ,a8888a,    
+ ,8P"'  `"Y8,  
+,8P        Y8, 
+88          88 
+88          88 
+`8b        d8' 
+ `8ba,  ,ad8'  
+   "Y8888P"    
+blocks
+
+eval 'export char_1=`cat`' <<"blocks"
+    88 
+  ,d88 
+888888 
+    88 
+    88 
+    88 
+    88 
+    88 
+blocks
+
+eval 'export char_2=`cat`' <<"blocks"
+ ad888888b, 
+d8"     "88 
+        a8P 
+     ,d8P"  
+   a8P"     
+ a8P'       
+d8"         
+88888888888 
+blocks
+
+eval 'export char_3=`cat`' <<"blocks"
+ ad888888b, 
+d8"     "88 
+        a8P 
+     aad8"  
+     ""Y8,  
+        "8b 
+Y8,     a88 
+ "Y888888P' 
+blocks
+
+eval 'export char_4=`cat`' <<"blocks"
+        ,d8  
+      ,d888  
+    ,d8" 88  
+  ,d8"   88  
+,d8"     88  
+8888888888888
+         88  
+         88  
+blocks
+
+eval 'export char_5=`cat`' <<"blocks"
+8888888888  
+88          
+88  ____    
+88a8PPPP8b, 
+PP"     `8b 
+         d8 
+Y8a     a8P 
+ "Y88888P"  
+blocks
+
+eval 'export char_6=`cat`' <<"blocks"
+  ad8888ba, 
+ 8P'    "Y8 
+d8          
+88,dd888bb, 
+88P'    `8b 
+88       d8 
+88a     a8P 
+ "Y88888P"  
+blocks
+
+eval 'export char_7=`cat`' <<"blocks"
+888888888888 
+        ,8P' 
+       d8"   
+     ,8P'    
+    d8"      
+  ,8P'       
+ d8"         
+8P'          
+blocks
+
+eval 'export char_8=`cat`' <<"blocks"
+ ad88888ba  
+d8"     "8b 
+Y8a     a8P 
+ "Y8aaa8P"  
+ ,d8"""8b,  
+d8"     "8b 
+Y8a     a8P 
+ "Y88888P"  
+blocks
+
+eval 'export char_9=`cat`' <<"blocks"
+ ad88888ba  
+d8"     "88 
+8P       88 
+Y8,    ,d88 
+ "PPPPPP"88 
+         8P 
+8b,    a8P  
+`"Y8888P'   
+blocks
+

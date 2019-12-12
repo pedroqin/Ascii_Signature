@@ -1,0 +1,718 @@
+#!/bin/bash
+
+### Upper
+
+eval 'export char_A=`cat`' <<"blocks"
+##  #### 
+##  #### 
+##   ### 
+# #  ### 
+#     ## 
+ ###  ## 
+ ####  # 
+######## 
+blocks
+
+eval 'export char_B=`cat`' <<"blocks"
+      ## 
+#  ##  # 
+#  ##  # 
+     ### 
+#  ##  # 
+#  ##  # 
+      ## 
+######## 
+blocks
+
+eval 'export char_C=`cat`' <<"blocks"
+###   ## 
+##  #  # 
+#  ##### 
+#  ##### 
+#  ##### 
+#  ### # 
+##    ## 
+######## 
+blocks
+
+eval 'export char_D=`cat`' <<"blocks"
+     ### 
+#  #  ## 
+#  ##  # 
+#  ##  # 
+#  ##  # 
+#  #  ## 
+     ### 
+######## 
+blocks
+
+eval 'export char_E=`cat`' <<"blocks"
+      ## 
+#  ### # 
+#  ##### 
+#    ### 
+#  ### # 
+#  ##  # 
+       # 
+######## 
+blocks
+
+eval 'export char_F=`cat`' <<"blocks"
+      ## 
+#  ### # 
+#  ##### 
+#    ### 
+#  ##### 
+#  ##### 
+    #### 
+######## 
+blocks
+
+eval 'export char_G=`cat`' <<"blocks"
+##   ### 
+#  ## ## 
+  ###### 
+  #    # 
+  ##  ## 
+  #   ## 
+#  #  ## 
+######## 
+blocks
+
+eval 'export char_H=`cat`' <<"blocks"
+   #   # 
+#  ##  # 
+#  ##  # 
+#      # 
+#  ##  # 
+#  ##  # 
+   #   # 
+######## 
+blocks
+
+eval 'export char_I=`cat`' <<"blocks"
+##    ## 
+###  ### 
+###  ### 
+###  ### 
+###  ### 
+###  ### 
+##    ## 
+######## 
+blocks
+
+eval 'export char_J=`cat`' <<"blocks"
+###    # 
+####  ## 
+####  ## 
+####  ## 
+####  ## 
+#  # ### 
+##  #### 
+######## 
+blocks
+
+eval 'export char_K=`cat`' <<"blocks"
+   ##  # 
+#  #   # 
+#    ### 
+#   #### 
+#    ### 
+#  #  ## 
+   ##  # 
+######## 
+blocks
+
+eval 'export char_L=`cat`' <<"blocks"
+    #### 
+#  ##### 
+#  ##### 
+#  ##### 
+#  ### # 
+#  ##  # 
+       # 
+######## 
+blocks
+
+eval 'export char_M=`cat`' <<"blocks"
+ ####  # 
+  ##   # 
+   #   # 
+ #  #  # 
+ ## #  # 
+ ####  # 
+  ##     
+######## 
+blocks
+
+eval 'export char_N=`cat`' <<"blocks"
+   ##  # 
+#   #  # 
+#      # 
+# #    # 
+# ##   # 
+# ###  # 
+   ##  # 
+######## 
+blocks
+
+eval 'export char_O=`cat`' <<"blocks"
+##    ## 
+#  ##  # 
+#  ##  # 
+#  ##  # 
+#  ##  # 
+#  ##  # 
+##    ## 
+######## 
+blocks
+
+eval 'export char_P=`cat`' <<"blocks"
+      ## 
+#  ##  # 
+#  ##  # 
+#     ## 
+#  ##### 
+#  ##### 
+    #### 
+######## 
+blocks
+
+eval 'export char_Q=`cat`' <<"blocks"
+#    ### 
+  ##  ## 
+  ##  ## 
+  ##  ## 
+  ##  ## 
+#    ### 
+###  # # 
+####  ## 
+blocks
+
+eval 'export char_R=`cat`' <<"blocks"
+      ## 
+#  ##  # 
+#  ##  # 
+#     ## 
+#    ### 
+#  #     
+   ##  # 
+######## 
+blocks
+
+eval 'export char_S=`cat`' <<"blocks"
+##    ## 
+#  ##  # 
+#  ##### 
+##   ### 
+# ##   # 
+#  ##  # 
+##    ## 
+######## 
+blocks
+
+eval 'export char_T=`cat`' <<"blocks"
+#      # 
+# #  # # 
+###  ### 
+###  ### 
+###  ### 
+###  ### 
+##    ## 
+######## 
+blocks
+
+eval 'export char_U=`cat`' <<"blocks"
+   ##  # 
+#  ##  # 
+#  ##  # 
+#  ##  # 
+#  ##  # 
+#  ##  # 
+##   #   
+######## 
+blocks
+
+eval 'export char_V=`cat`' <<"blocks"
+   #  ## 
+#  ## ## 
+#  ### # 
+#   ## # 
+##  ## # 
+##    ## 
+###  ### 
+######## 
+blocks
+
+eval 'export char_W=`cat`' <<"blocks"
+  ##  ## 
+  ##   # 
+  # ## # 
+  #  # # 
+       # 
+   #   # 
+  ###  # 
+######## 
+blocks
+
+eval 'export char_X=`cat`' <<"blocks"
+   #   # 
+  ##  ## 
+#    ### 
+##  #### 
+#    ### 
+  ##  ## 
+   #   # 
+######## 
+blocks
+
+eval 'export char_Y=`cat`' <<"blocks"
+  ####   
+#  ##  # 
+#  ##  # 
+##    ## 
+###  ### 
+###  ### 
+##    ## 
+######## 
+blocks
+
+eval 'export char_Z=`cat`' <<"blocks"
+#   #  #
+#      #
+# ##  ##
+###  ###
+##  ####
+#    # #
+#  #   #
+########
+blocks
+
+### lower
+
+eval 'export char_a=`cat`' <<"blocks"
+######## 
+######## 
+###  ### 
+## #  ## 
+#  #  ## 
+#  #  ## 
+##  #  # 
+######## 
+blocks
+
+eval 'export char_b=`cat`' <<"blocks"
+###  ### 
+##  #### 
+## # ### 
+#  #  ## 
+#   #  # 
+#  ##  # 
+# #   ## 
+######## 
+blocks
+
+eval 'export char_c=`cat`' <<"blocks"
+######## 
+######## 
+##  #### 
+#  # ### 
+#  ##### 
+#  #  ## 
+##   ### 
+######## 
+blocks
+
+eval 'export char_d=`cat`' <<"blocks"
+######   
+#####  # 
+### # ## 
+##    ## 
+#  #  ## 
+#  #  ## 
+##  #  # 
+######## 
+blocks
+
+eval 'export char_e=`cat`' <<"blocks"
+######## 
+######## 
+###  ### 
+## ## ## 
+#    ### 
+#  ### # 
+##    ## 
+######## 
+blocks
+
+eval 'export char_f=`cat`' <<"blocks"
+#####  # 
+####  ## 
+#### ### 
+##     # 
+###  ### 
+###  ### 
+###  ### 
+##  #### 
+blocks
+
+eval 'export char_g=`cat`' <<"blocks"
+######## 
+######## 
+##   # # 
+#  ##  # 
+#  #   # 
+##  #  # 
+####  ## 
+#    ### 
+blocks
+
+eval 'export char_h=`cat`' <<"blocks"
+##  #### 
+#  ##### 
+# ##  ## 
+# # #  # 
+#  ##  # 
+#  ##  # 
+#  ##    
+######## 
+blocks
+
+eval 'export char_i=`cat`' <<"blocks"
+######## 
+###  ### 
+######## 
+##   ### 
+# #  ### 
+###  # # 
+###   ## 
+######## 
+blocks
+
+eval 'export char_j=`cat`' <<"blocks"
+######## 
+#####  # 
+######## 
+####   # 
+### #  # 
+#####  # 
+#####  # 
+##    ## 
+blocks
+
+eval 'export char_k=`cat`' <<"blocks"
+##  #### 
+#  ##### 
+# #  ### 
+#  #  ## 
+#  # ### 
+#     #  
+#  ##  # 
+######## 
+blocks
+
+eval 'export char_l=`cat`' <<"blocks"
+#####  # 
+####  ## 
+####  ## 
+###  ### 
+###  ### 
+###  ### 
+####  ## 
+######## 
+blocks
+
+eval 'export char_m=`cat`' <<"blocks"
+######## 
+######## 
+# # ## # 
+       # 
+ #  #  # 
+ ## #  # 
+  ###    
+######## 
+blocks
+
+eval 'export char_n=`cat`' <<"blocks"
+######## 
+######## 
+#  #  ## 
+#   #  # 
+#  ##  # 
+#  ##  # 
+#  ##    
+######## 
+blocks
+
+eval 'export char_o=`cat`' <<"blocks"
+######## 
+######## 
+###   ## 
+##  #  # 
+#  ##  # 
+#  #  ## 
+##   ### 
+######## 
+blocks
+
+eval 'export char_p=`cat`' <<"blocks"
+######## 
+######## 
+# #   ## 
+   ##  # 
+#  ##  # 
+#     ## 
+#  ##### 
+    #### 
+blocks
+
+eval 'export char_q=`cat`' <<"blocks"
+######## 
+######## 
+##   # # 
+#  ##  # 
+#  ##  # 
+##     # 
+#####  # 
+####     
+blocks
+
+eval 'export char_r=`cat`' <<"blocks"
+######## 
+######## 
+# #   ## 
+   ##  # 
+#  ##### 
+#  ##### 
+#  ##### 
+######## 
+blocks
+
+eval 'export char_s=`cat`' <<"blocks"
+######## 
+######## 
+###    # 
+##  #### 
+###  ### 
+# ##   # 
+#     ## 
+######## 
+blocks
+
+eval 'export char_t=`cat`' <<"blocks"
+######## 
+###  ### 
+#      # 
+###  ### 
+###  ### 
+###  # # 
+####  ## 
+######## 
+blocks
+
+eval 'export char_u=`cat`' <<"blocks"
+######## 
+######## 
+#  ##  # 
+   ##  # 
+#  ##  # 
+#  ##  # 
+##   #   
+######## 
+blocks
+
+eval 'export char_v=`cat`' <<"blocks"
+######## 
+######## 
+# #### # 
+  #### # 
+#  ##  # 
+##    ## 
+###  ### 
+######## 
+blocks
+
+eval 'export char_w=`cat`' <<"blocks"
+######## 
+######## 
+#  ###   
+   # #   
+#        
+##     # 
+##  #  # 
+######## 
+blocks
+
+eval 'export char_x=`cat`' <<"blocks"
+######## 
+######## 
+#  ##  # 
+##    ## 
+###  ### 
+##    ## 
+#  ##  # 
+######## 
+blocks
+
+eval 'export char_y=`cat`' <<"blocks"
+######## 
+######## 
+#  ##  # 
+   ##  # 
+## ## ## 
+##    ## 
+###  ### 
+#   #### 
+blocks
+
+eval 'export char_z=`cat`' <<"blocks"
+######## 
+######## 
+#      # 
+# ##  ## 
+###  ### 
+##  ## # 
+#     ## 
+######## 
+blocks
+
+# if we don't have lower case ...
+export char_a="${char_a:-$char_A}"
+export char_b="${char_b:-$char_B}"
+export char_c="${char_c:-$char_C}"
+export char_d="${char_d:-$char_D}"
+export char_e="${char_e:-$char_E}"
+export char_f="${char_f:-$char_F}"
+export char_g="${char_g:-$char_G}"
+export char_h="${char_h:-$char_H}"
+export char_i="${char_i:-$char_I}"
+export char_j="${char_j:-$char_J}"
+export char_k="${char_k:-$char_K}"
+export char_l="${char_l:-$char_L}"
+export char_m="${char_m:-$char_M}"
+export char_n="${char_n:-$char_N}"
+export char_o="${char_o:-$char_O}"
+export char_p="${char_p:-$char_P}"
+export char_q="${char_q:-$char_Q}"
+export char_r="${char_r:-$char_R}"
+export char_s="${char_s:-$char_S}"
+export char_t="${char_t:-$char_T}"
+export char_u="${char_u:-$char_U}"
+export char_v="${char_v:-$char_V}"
+export char_w="${char_w:-$char_W}"
+export char_x="${char_x:-$char_X}"
+export char_y="${char_y:-$char_Y}"
+export char_z="${char_z:-$char_Z}"
+
+### number
+
+eval 'export char_0=`cat`' <<"blocks"
+##    ## 
+#  ##  # 
+#  #   # 
+#   #  # 
+#  ##  # 
+#  ##  # 
+##    ## 
+######## 
+blocks
+
+eval 'export char_1=`cat`' <<"blocks"
+###  ### 
+###  ### 
+##   ### 
+###  ### 
+###  ### 
+###  ### 
+#      # 
+######## 
+blocks
+
+eval 'export char_2=`cat`' <<"blocks"
+##    ## 
+#  ##  # 
+#####  # 
+####  ## 
+##  #### 
+#  ##### 
+#      # 
+######## 
+blocks
+
+eval 'export char_3=`cat`' <<"blocks"
+##    ## 
+#  ##  # 
+#####  # 
+###   ## 
+#####  # 
+#  ##  # 
+##    ## 
+######## 
+blocks
+
+eval 'export char_4=`cat`' <<"blocks"
+#####  # 
+####   # 
+###    # 
+#  ##  # 
+#        
+#####  # 
+#####  # 
+######## 
+blocks
+
+eval 'export char_5=`cat`' <<"blocks"
+#      # 
+#  ##### 
+#     ## 
+#####  # 
+#####  # 
+#  ##  # 
+##    ## 
+######## 
+blocks
+
+eval 'export char_6=`cat`' <<"blocks"
+##    ## 
+#  ##  # 
+#  ##### 
+#     ## 
+#  ##  # 
+#  ##  # 
+##    ## 
+######## 
+blocks
+
+eval 'export char_7=`cat`' <<"blocks"
+#      # 
+#  ##  # 
+####  ## 
+###  ### 
+###  ### 
+###  ### 
+###  ### 
+######## 
+blocks
+
+eval 'export char_8=`cat`' <<"blocks"
+##    ## 
+#  ##  # 
+#  ##  # 
+##    ## 
+#  ##  # 
+#  ##  # 
+##    ## 
+######## 
+blocks
+
+eval 'export char_9=`cat`' <<"blocks"
+##    ## 
+#  ##  # 
+#  ##  # 
+##     # 
+#####  # 
+#  ##  # 
+##    ## 
+######## 
+blocks
+
