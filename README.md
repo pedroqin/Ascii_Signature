@@ -37,5 +37,82 @@ $
 ```
 #### `font` 文件夹
 用于存放字符画风格的目录。其中，'template' 为模板文件，在新增字符画风格时，只需将'template' `copy` 成新的名字，然后将文件中大小写英文字母和数字填入对应位置即可
+目前已经支持的字符画样式如下：
+```
+PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
+$ ls font/
+blocks  bubble  doom  smpoison  template  timesofl  univers
+PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
+$ ./ascii_signature.sh -s Diag 
+ ____  ____  ____  ____ 
+||D ||||i ||||a ||||g ||
+||__||||__||||__||||__||
+|/__\||/__\||/__\||/__\|
+PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
+$ ./ascii_signature.sh -s Diag -f blocks
+ .----------------.  .----------------.  .----------------.  .----------------.
+| .--------------. || .--------------. || .--------------. || .--------------. |
+| |  ________    | || |     _____    | || |      __      | || |    ______    | |
+| | |_   ___ `.  | || |    |_   _|   | || |     /  \     | || |  .' ___  |   | |
+| |   | |   `. \ | || |      | |     | || |    / /\ \    | || | / .'   \_|   | |
+| |   | |    | | | || |      | |     | || |   / ____ \   | || | | |    ____  | |
+| |  _| |___.' / | || |     _| |_    | || | _/ /    \ \_ | || | \ `.___]  _| | |
+| | |________.'  | || |    |_____|   | || ||____|  |____|| || |  `._____.'   | |
+| |              | || |              | || |              | || |              | |
+| '--------------' || '--------------' || '--------------' || '--------------' |
+ '----------------'  '----------------'  '----------------'  '----------------' 
+
+PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
+$ ./ascii_signature.sh -s Diag -f bubble
+  _    _    _    _  
+ / \  / \  / \  / \ 
+( D )( i )( a )( g )
+ \_/  \_/  \_/  \_/ 
+
+PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
+$ ./ascii_signature.sh -s Diag -f doom
+______   _                  
+|  _  \ (_)                 
+| | | |  _    __ _    __ _  
+| | | | | |  / _` |  / _` | 
+| |/ /  | | | (_| | | (_| | 
+|___/   |_|  \__,_|  \__, | 
+                      __/ | 
+                     |___/  
+
+PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
+$ ./ascii_signature.sh -s Diag -f smpoison
+@@@@@@@  @@@  @@@@@@   @@@@@@@  
+@@!  @@@ @@! @@!  @@@ !@@       
+@!@  !@! !!@ @!@!@!@! !@! @!@!@ 
+!!:  !!! !!: !!:  !!! :!!   !!: 
+:: :  :  :    :   : :  :: :: :  
+
+PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
+$ ./ascii_signature.sh -s Diag -f timesofl
+     ### ######## ######## ######## 
+#  #  ## ###  ### ######## ######## 
+#  ##  # ######## ###  ### ##   # # 
+#  ##  # ##   ### ## #  ## #  ##  # 
+#  ##  # # #  ### #  #  ## #  #   # 
+#  #  ## ###  # # #  #  ## ##  #  # 
+     ### ###   ## ##  #  # ####  ## 
+######## ######## ######## #    ### 
+
+PedroQin@LAPTOP-7QJ4FHLC MINGW64 /d/OneDrive - Lo/linux/Ascii_Signature (master)
+$ ./ascii_signature.sh -s Diag -f univers
+88888888ba,   88 
+88      `"8b  "" 
+88        `8b    
+88         88 88 ,adPPYYba,  ,adPPYb,d8 
+88         88 88 ""     `Y8 a8"    `Y88 
+88         8P 88 ,adPPPPP88 8b       88 
+88      .a8P  88 88,    ,88 "8a,   ,d88 
+88888888Y"'   88 `"8bbdP"Y8  `"YbbdP"Y8 
+                             aa,    ,88 
+                              "Y8bbdP"  
+
+```
+
 
 **注**：当缺少小写字母对应字符画时，将对应位置留空即可。在进行转换时会自动使用大写字母字符画进行替换

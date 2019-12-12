@@ -2,7 +2,7 @@
 ###############################################
 # Filename    :   ascii_signature.sh
 # Author      :   PedroQin
-# Email       :   pedro.hq.qin@mail.foxconn.com
+# Email       :   constmyheart@163.com
 # Date        :   2019-12-11 08:23:03
 # Description :   
 # Version     :   1.0.0
