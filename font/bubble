@@ -1,0 +1,11 @@
+#!/bin/bash
+template="  _  
+ / \\ 
+( 1 )
+ \\_/ "
+for ii in {a..z} {A..Z} {0..9};do
+    export char_$ii="$(echo "$template"|tr 1 $ii)"
+    #iii="char_$ii"
+    #echo "${!iii}"
+    #sleep 1
+done
