@@ -1,4 +1,5 @@
 #!/bin/bash
+export FONT_NAME="timesofl"
 
 ### Upper
 

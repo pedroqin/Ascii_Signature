@@ -1,6 +1,5 @@
-#!/bin/bash
-
 ### Upper
+export FONT_NAME="doom"
 
 eval 'export char_A=`cat`' <<"blocks"
   ___   
@@ -714,5 +713,378 @@ eval 'export char_9=`cat`' <<"blocks"
 \____/  
         
         
+blocks
+
+### punctuation mark
+#\ )
+eval 'export char_space=`cat`' <<"blocks"
+   
+   
+   
+   
+   
+   
+   
+         
+blocks
+
+#\!)
+eval 'export char_exclamation_mark=`cat`' <<"blocks"
+ _  
+| | 
+| | 
+| | 
+|_| 
+(_) 
+    
+    
+blocks
+
+#\+)
+eval 'export char_plus=`cat`' <<"blocks"
+        
+   _    
+ _| |_  
+|_   _| 
+  |_|   
+        
+        
+        
+blocks
+
+#\-)
+eval 'export char_minus=`cat`' <<"blocks"
+         
+         
+ ______  
+|______| 
+         
+         
+         
+         
+blocks
+
+#\.)
+eval 'export char_period=`cat`' <<"blocks"
+    
+    
+    
+    
+ _  
+(_) 
+    
+    
+blocks
+
+#\,)
+eval 'export char_comma=`cat`' <<"blocks"
+    
+    
+    
+    
+ _  
+( ) 
+|/  
+    
+blocks
+
+#\:)
+eval 'export char_colon=`cat`' <<"blocks"
+    
+ _  
+(_) 
+    
+ _  
+(_) 
+    
+    
+blocks
+
+#\;)
+eval 'export char_semicolon=`cat`' <<"blocks"
+    
+ _  
+(_) 
+    
+ _  
+( ) 
+|/  
+    
+blocks
+
+#\?)
+eval 'export char_question_mark=`cat`' <<"blocks"
+ ___    
+ |__ \  
+    ) | 
+   / /  
+  |_|   
+  (_)   
+        
+        
+blocks
+
+#\*)
+eval 'export char_asterisk=`cat`' <<"blocks"
+    _     
+ /\| |/\  
+ \ ` ' /  
+|_     _| 
+ / , . \  
+ \/|_|\/  
+          
+          
+blocks
+
+#\_)
+eval 'export char_underscore=`cat`' <<"blocks"
+         
+         
+         
+         
+         
+         
+ ______  
+|______| 
+blocks
+
+#\')
+eval 'export char_single_quotation_marks=`cat`' <<"blocks"
+ _  
+( ) 
+|/  
+    
+    
+    
+    
+    
+blocks
+
+#\")
+eval 'export char_double_quotation_marks=`cat`' <<"blocks"
+ _ _  
+( | ) 
+ V V  
+      
+      
+      
+      
+      
+blocks
+
+#\()
+eval 'export char_parenthesis_l=`cat`' <<"blocks"
+  __ 
+ / / 
+| |  
+| |  
+| |  
+| |  
+ \_\ 
+     
+blocks
+
+#\))
+eval 'export char_parenthesis_r=`cat`' <<"blocks"
+__   
+\ \  
+ | | 
+ | | 
+ | | 
+ | | 
+/_/  
+     
+blocks
+
+#\[)
+eval 'export char_square_brackets_l=`cat`' <<"blocks"
+ ___  
+|  _| 
+| |   
+| |   
+| |   
+| |_  
+|___| 
+      
+blocks
+
+#\])
+eval 'export char_square_brackets_r=`cat`' <<"blocks"
+ ___  
+|_  | 
+  | | 
+  | | 
+  | | 
+ _| | 
+|___| 
+      
+blocks
+
+#\<)
+eval 'export char_Angle_brackets_l=`cat`' <<"blocks"
+   __ 
+  / / 
+ / /  
+< <   
+ \ \  
+  \_\ 
+      
+      
+blocks
+
+#\>)
+eval 'export char_Angle_brackets_r=`cat`' <<"blocks"
+__    
+\ \   
+ \ \  
+  > > 
+ / /  
+/_/   
+      
+      
+blocks
+
+#\{)
+eval 'export char_curly_brackets_l=`cat`' <<"blocks"
+   __ 
+  / / 
+ | |  
+/ /   
+\ \   
+ | |  
+  \_\ 
+      
+blocks
+
+#\})
+eval 'export char_curly_brackets_r=`cat`' <<"blocks"
+__    
+\ \   
+ | |  
+  \ \ 
+  / / 
+ | |  
+/_/   
+      
+blocks
+
+#\&)
+eval 'export char_ampersand=`cat`' <<"blocks"
+         
+  ___    
+ ( _ )   
+ / _ \/\ 
+| (_>  < 
+ \___/\/ 
+         
+         
+blocks
+
+#\/)
+eval 'export char_slash=`cat`' <<"blocks"
+     __ 
+    / / 
+   / /  
+  / /   
+ / /    
+/_/     
+        
+        
+blocks
+
+#\|)
+eval 'export char_vertical_bar=`cat`' <<"blocks"
+ _  
+| | 
+| | 
+| | 
+| | 
+| | 
+| | 
+|_| 
+blocks
+
+#\\)
+eval 'export char_backslash=`cat`' <<"blocks"
+__      
+\ \     
+ \ \    
+  \ \   
+   \ \  
+    \_\ 
+        
+        
+blocks
+
+#\~)
+eval 'export char_tilde=`cat`' <<"blocks"
+ /\/| 
+|/\/  
+      
+      
+      
+      
+      
+      
+blocks
+
+#\@)
+eval 'export char_at=`cat`' <<"blocks"
+          
+   ____   
+  / __ \  
+ / / _` | 
+| | (_| | 
+ \ \__,_| 
+  \____/  
+          
+blocks
+
+#\#)
+eval 'export char_pound_sign=`cat`' <<"blocks"
+   _  _    
+ _| || |_  
+|_  __  _| 
+ _| || |_  
+|_  __  _| 
+  |_||_|   
+           
+           
+blocks
+
+#\$)
+eval 'export char_dollar=`cat`' <<"blocks"
+  _   
+ | |  
+/ __) 
+\__ \ 
+(   / 
+ |_|  
+      
+      
+blocks
+
+#\%)
+eval 'export char_percent=`cat`' <<"blocks"
+ _   __ 
+(_) / / 
+   / /  
+  / /   
+ / / _  
+/_/ (_) 
+        
+        
+blocks
+
+#\^)
+eval 'export char_Caret=`cat`' <<"blocks"
+ /\  
+|/\| 
+     
+     
+     
+     
+     
+     
 blocks
 

@@ -1,215 +1,164 @@
 #!/bin/bash
+export FONT_NAME="template"
 
 ### Upper
 
 eval 'export char_A=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_B=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_C=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_D=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_E=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_F=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_G=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_H=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_I=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_J=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_K=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_L=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_M=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_N=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_O=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_P=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_Q=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_R=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_S=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_T=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_U=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_V=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_W=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_X=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_Y=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_Z=`cat`' <<"blocks"
-
 blocks
 
 ### lower
 
 eval 'export char_a=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_b=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_c=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_d=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_e=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_f=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_g=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_h=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_i=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_j=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_k=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_l=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_m=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_n=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_o=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_p=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_q=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_r=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_s=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_t=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_u=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_v=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_w=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_x=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_y=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_z=`cat`' <<"blocks"
-
 blocks
 
 # if we don't have lower case ...
@@ -243,42 +192,157 @@ export char_z="${char_z:-$char_Z}"
 ### number
 
 eval 'export char_0=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_1=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_2=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_3=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_4=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_5=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_6=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_7=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_8=`cat`' <<"blocks"
-
 blocks
 
 eval 'export char_9=`cat`' <<"blocks"
+blocks
 
+### punctuation mark
+#\ )
+eval 'export char_space=`cat`' <<"blocks"
+blocks
+
+#\!
+eval 'export char_exclamation_mark=`cat`' <<"blocks"
+blocks
+
+#\+
+eval 'export char_plus=`cat`' <<"blocks"
+blocks
+
+#\-
+eval 'export char_minus=`cat`' <<"blocks"
+blocks
+
+#\.
+eval 'export char_period=`cat`' <<"blocks"
+blocks
+
+#\,
+eval 'export char_comma=`cat`' <<"blocks"
+blocks
+
+#\:
+eval 'export char_colon=`cat`' <<"blocks"
+blocks
+
+#\;
+eval 'export char_semicolon=`cat`' <<"blocks"
+blocks
+
+#\?
+eval 'export char_question_mark=`cat`' <<"blocks"
+blocks
+
+#\*
+eval 'export char_asterisk=`cat`' <<"blocks"
+blocks
+
+#\_
+eval 'export char_underscore=`cat`' <<"blocks"
+blocks
+
+#\'
+eval 'export char_single_quotation_marks=`cat`' <<"blocks"
+blocks
+
+#\"
+eval 'export char_double_quotation_marks=`cat`' <<"blocks"
+blocks
+
+#\(
+eval 'export char_parenthesis_l=`cat`' <<"blocks"
+blocks
+
+#\)
+eval 'export char_parenthesis_r=`cat`' <<"blocks"
+blocks
+
+#\[
+eval 'export char_square_brackets_l=`cat`' <<"blocks"
+blocks
+
+#\]
+eval 'export char_square_brackets_r=`cat`' <<"blocks"
+blocks
+
+#\<
+eval 'export char_Angle_brackets_l=`cat`' <<"blocks"
+blocks
+
+#\>
+eval 'export char_Angle_brackets_r=`cat`' <<"blocks"
+blocks
+
+#\{
+eval 'export char_curly_brackets_l=`cat`' <<"blocks"
+blocks
+
+#\}
+eval 'export char_curly_brackets_r=`cat`' <<"blocks"
+blocks
+
+#\&
+eval 'export char_ampersand=`cat`' <<"blocks"
+blocks
+
+#\/
+eval 'export char_slash=`cat`' <<"blocks"
+blocks
+
+#\|
+eval 'export char_vertical_bar=`cat`' <<"blocks"
+blocks
+
+#\\
+eval 'export char_backslash=`cat`' <<"blocks"
+blocks
+
+#\~
+eval 'export char_tilde=`cat`' <<"blocks"
+blocks
+
+#\@
+eval 'export char_at=`cat`' <<"blocks"
+blocks
+
+#\#
+eval 'export char_pound_sign=`cat`' <<"blocks"
+blocks
+
+#\$
+eval 'export char_dollar=`cat`' <<"blocks"
+blocks
+
+#\%
+eval 'export char_percent=`cat`' <<"blocks"
+blocks
+
+#\^
+eval 'export char_Caret=`cat`' <<"blocks"
 blocks
 

@@ -3,6 +3,9 @@
 # Filename    :   ascii_signature.sh
 # Author      :   PedroQin
 # Email       :   constmyheart@163.com
+# Date        :   2020-07-05 20:43:28
+# Description :   Add translate punctuation mark 
+# Version     :   1.0.1
 # Date        :   2019-12-11 08:23:03
 # Description :   
 # Version     :   1.0.0
@@ -15,7 +18,9 @@ whereami=`cd $(dirname $0);pwd`
 # INFO  2
 # WARN  3
 # ERROR 4
-log_level=4
+LOG_LEVEL=4
+# will not source ASCII Art when noinit=1
+NOINIT=0
 
 function isdigit()
 {
@@ -43,18 +48,21 @@ function print_log()
         print_level=1
     fi
     
-    if [ $log_level -le $print_level ] ;then
+    if [ $LOG_LEVEL -le $print_level ] ;then
         case $print_level in 
             1)
             echo "$@"
             ;;
             2)
+            # green
             echo -e "\033[32m$@\033[0m"
             ;;
             3)
+            # yello
             echo -e "\033[33m$@\033[0m"
             ;;
             4)
+            # red
             echo -e "\033[31m$@\033[0m"
             ;;
         esac
@@ -62,43 +70,200 @@ function print_log()
 
 }
 
+function translate_punctuation()
+{
+    case "$1" in
+        [a-zA-Z0-9])
+        echo "char_$1"
+        ;;
+
+        \ )
+        echo "char_space"
+        ;;
+        
+        \!)
+        echo "char_exclamation_mark"
+        ;;
+
+        \+)
+        echo "char_plus"
+        ;;
+
+        \-)
+        echo "char_minus"
+        ;;
+
+        \.)
+        echo "char_period"
+        ;;
+
+        \,)
+        echo "char_comma"
+        ;;
+
+        \:)
+        echo "char_colon"
+        ;;
+
+        \;)
+        echo "char_semicolon"
+        ;;
+
+        \?)
+        echo "char_question_mark"
+        ;;
+
+        \*)
+        echo "char_asterisk"
+        ;;
+
+        \_)
+        echo "char_underscore"
+        ;;
+
+        \')
+        echo "char_single_quotation_marks"
+        ;;
+
+        \")
+        echo "char_double_quotation_marks"
+        ;;
+
+        \()
+        echo "char_parenthesis_l"
+        ;;
+
+        \))
+        echo "char_parenthesis_r"
+        ;;
+
+        \[)
+        echo "char_square_brackets_l"
+        ;;
+
+        \])
+        echo "char_square_brackets_r"
+        ;;
+
+        \<)
+        echo "char_Angle_brackets_l"
+        ;;
+
+        \>)
+        echo "char_Angle_brackets_r"
+        ;;
+
+        \{)
+        echo "char_curly_brackets_l"
+        ;;
+
+        \})
+        echo "char_curly_brackets_r"
+        ;;
+
+        \&)
+        echo "char_ampersand"
+        ;;
+
+        \/)
+        echo "char_slash"
+        ;;
+
+        \|)
+        echo "char_vertical_bar"
+        ;;
+
+        \\)
+        echo "char_backslash"
+        ;;
+
+        \~)
+        echo "char_tilde"
+        ;;
+
+        \@)
+        echo "char_at"
+        ;;
+
+        \#)
+        echo "char_pound_sign"
+        ;;
+
+        \$)
+        echo "char_dollar"
+        ;;
+
+        \%)
+        echo "char_percent"
+        ;;
+
+        \^)
+        echo "char_Caret"
+        ;;
+
+        *)
+        return
+        ;;
+
+    esac
+}
+
 function combining_str()
 {
-    chars=`echo "$1"|grep -oE [a-z' 'A-Z0-9]`
+    chars="$1"
     # get height
     height=`echo "$char_A"|wc -l`
-    for ii in `seq 1 $height`;do
-        for char in $chars ;do
-            char=char_$char
-            echo -n "$(echo "${!char}"|sed -n  "$ii"p)"
+    for i in `seq 1 $height`;do
+        for ii in `seq 0 $[ ${#chars} - 1 ]`; do
+            char=`translate_punctuation "${chars:$ii:1}"`
+            [ -n "$char" ] && echo -n "$(echo "${!char}"|sed -n  "$i"p)"
         done
         echo
     done
 }
 
-function default_font()
+function integrated_font()
 {
     #    ____ ____ ____ 
     #   ||1 |||2 |||3 ||
     #   ||__|||__|||__||
     #   |/__\|/__\|/__\|
-    template=" ____ 
+    if [ "$font" == "bubble" ];then
+        template="  _  
+ / \\ 
+( 1 )
+ \\_/ "
+    elif [ "$font" == "smkeyboard" -o "$font" == "default" ];then
+        template=" ____ 
 ||1 ||
 ||__||
 |/__\\|"
-    for ii in {a..z} {A..Z} {0..9};do
-        export char_$ii="$(echo "$template"|tr 1 $ii)"
+    fi
+    # length - 1
+    local char_num=$[${#string}-1]
+    local char2art=()
+    local height=`echo "$template"|wc -l`
+    for i in `seq 0 $char_num`; do
+        char="${string:$i:1}"
+        char2art[$i]="$(echo "$template"|tr 1 "$char")"
     done
+    for i in `seq 1 $height`;do
+        for ii in `seq 0 $char_num`; do
+            echo -n "$(echo "${char2art[$ii]}"|sed -n  "$i"p)"
+        done
+        echo
+    done
+    exit 
 }
 
 function list_fonts()
 {
-    all_fonts="smkeyboard(default)"
+    all_fonts="smkeyboard(default)  bubble"
     if [ ! -d "$whereami/font" ];then
         print_log 3 "Can't find $whereami/font"
     else
         for ii in `ls "$whereami/font"`;do
-            all_fonts="$all_fonts $ii"
+            all_fonts="$all_fonts  $ii"
         done
     fi
     echo "$all_fonts"
@@ -109,8 +274,12 @@ function usage()
 {
     cat <<!
 usage:
-    ./ascii_signature.sh --font|-f \$font --str|-s \$string   do work
-                         --list|-l                            list all supported font
+    ./ascii_signature.sh --font|-f \$font --str|-s \$string     do work
+                         --list|-l                              list all supported font
+                         --debug|-d \$LOG_LEVEL                 set the LOG_LEVEL, which level log can be display
+                         --noinit|-n                            the source action need some time to execute, if you use this tool 
+                                                                frequently in seconds, you may need use this para : do not source
+                                                                dictionaries every time, source it before you use this tool !
 !
     exit 255
 }
@@ -124,13 +293,31 @@ while [ $# -ge 1 ] ;do
         shift
         font=$1
         ;;
+
         --str|-s)
         shift
         string="$1"
         ;;
+
         --list|-l)
         list_fonts
         ;;
+        
+        --debug|-d)
+        shift
+        if [ -n "$1" ] && isdigit $1 ;then
+            LOG_LEVEL="$1"
+        else
+            LOG_LEVEL=1
+            print_log 3 "Wrong log level, use default level 1"
+        fi
+        ;;
+
+        # the source action need some time to execute, if you use this tool frequently in seconds , you may need use this para : do not source dictionaries every time, source it before you use this tool !
+        --noinit|-n)
+        NOINIT=1
+        ;;
+
         *)
         usage
         ;;
@@ -141,17 +328,16 @@ done
 font=${font:-default}
 [ -z "$string" ] && usage
 
+[ $NOINIT -eq 1 ] && print_log 2 "Set noinit, Will not source the dictionary !"
 ### begin
 # get font
-if [ ! -f "$whereami/font/$font" ] && [ "$font" != "smkeyboard" -a "$font" != "default" ];then
+if [ ! -f "$whereami/font/$font" ] && [ "$font" != "smkeyboard" -a "$font" != "default" -a "$font" != "bubble" ];then
     print_log 4 "Can't find the font: $font. The following options are available: 
     `list_fonts`"
-    
     exit 1
 else
-    print_log 2 "font: $font"
-    [ "$font" == "smkeyboard" -o "$font" == "default" ] && default_font || . "$whereami"/font/$font
+    print_log 1 "font: $font    string: $string"
+    [ $NOINIT -eq 0 ] && { [ "$font" == "smkeyboard" -o "$font" == "default" -o "$font" == "bubble" ] && integrated_font || . "$whereami"/font/$font ; }
 fi
-print_log 1 "font: $font    string: $string"
 # combining string
 combining_str "$string"
